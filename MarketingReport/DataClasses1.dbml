@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MarketStats" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AAStandards;Initial Catalog=MarketStats;Integrated Security=True" SettingsObjectName="MarketingReport.Properties.Settings" SettingsPropertyName="MarketStatsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TitleOfBlog" Member="TitleOfBlogs">
+    <Type Name="TitleOfBlog">
+      <Column Name="BlogNumber" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="InteractionType" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
